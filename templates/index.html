@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="sh">
+    <h2 style="padding-left:400px;">Works log</h2>
+{% for i in range(3)%}
+    <h3>Action {{id[i]}}</h3>
+    <table>
+        <tr class="gg"><th><div>Title of activity</div></th><th><div>Team leader</div></th><th><div>Duration</div></th><th><div>List of collaborators</div></th><th><div>Is finished</div></th></tr>
+        <tr><td>{{job[i][0].upper()}}{{job[i][1:]}}</td><td>{{team_lead[i][0]}} {{team_lead[i][1]}}</td><td>{{dur[i]}}</td><td>{{lst[i]}}</td><td class="finish">{% if finish[i] %} Is finished {% else %} Is not finished {% endif %}</td></tr>
+    </table>
+{% endfor %}
+</div>
+{% endblock %}

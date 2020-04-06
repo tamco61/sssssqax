@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+                             <link rel="stylesheet"
+                             href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+                             integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+                             crossorigin="anonymous">
+    <title>{{title}}</title>
+    <style type="text/css">
+        table
+        {
+            font-family: "Lucida Sans Unicode", "Lucida Grande", Sans-Serif;
+            text-align: left;
+            border-collapse: separate;
+            border-spacing: 5px;
+            background: #ECE9E0;
+            color: #656665;
+            border: 16px solid #ECE9E0;
+            border-radius: 20px;
+        }
+        th {
+            font-size: 18px;
+            padding: 10px;
+        }
+        td {
+            background: #F5D7BF;
+            padding: 10px;
+        }
+        h4
+        {
+            color: gray;
+            margin-left: 20px;
+        }
+        div.sh
+        {
+            padding-left: 100px;
+        }
+        tr.gg
+        {
+            background-color: #dddddd;
+        }
+        td.finish
+        {
+            background-color: #E199DA;
+        }
+    </style>
+</head>
+<body>
+    <div class="alert alert-dark" role="alert">
+        <h1 class="s">Миссия Колонизация Марса</h1>
+    </div>
+    <h4>И на Марсе будут яблони цвести!</h4>
+    {% block content %}{% endblock %}
+</body>
